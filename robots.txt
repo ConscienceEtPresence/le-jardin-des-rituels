@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://conscienceetpresence.github.io/cecile-bodin/sitemap.xml
