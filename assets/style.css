@@ -523,3 +523,34 @@ section.alterne .savoir .item { background: var(--ivoire); }
 }
 .temoignage p { font-style: italic; font-size: .97rem; color: var(--brun-clair); padding-left: 18px; }
 .temoignage .auteur { margin-top: 12px; padding-left: 18px; font-style: normal; font-size: .85rem; color: var(--sauge-fonce); letter-spacing: .05em; }
+
+/* ---------- Images d'ambiance ---------- */
+.image-solo {
+  display: block;
+  margin: 36px auto 0;
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 16px 40px rgba(95, 79, 65, 0.14);
+}
+.galerie {
+  display: flex;
+  gap: 22px;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  max-width: 880px;
+  margin: 36px auto 0;
+}
+.galerie img {
+  border-radius: 18px;
+  box-shadow: 0 14px 34px rgba(95, 79, 65, 0.12);
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.galerie img.h340 { max-height: 340px; width: auto; }
+@media (max-width: 640px) {
+  .galerie { gap: 16px; }
+  .galerie img.h340 { max-height: none; width: 100%; }
+}
